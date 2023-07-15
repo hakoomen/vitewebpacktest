@@ -1,0 +1,15 @@
+what kind of problems does webpack solve:
+    1- minify/uglify/compress our files to make it harder to reverse-engineer it and automate this process
+    2- they mostly output a single-file:
+        1- if our code has dependencies on other files we don't have to download them separately and include them
+            * the order of imports are won't matter as well
+        2- by including various file types in our ts/js/** (like .scss, .json) we "magically" can inject them into the page
+        3- npm now manages our packages (we don't have to manually download them) 
+    3- transform .SOMETHING files to .SOMETHING_ELSE files that our target understand by using loaders
+        * .scss to .css and then injecting it to dom
+        * .ts to .js to babel(polyfill) to .js again    
+
+        1- by doing this we make support for older targets possible whilst we are using the newest features (scss for variables/funcs and es6 syntax for our js files)
+        2- this process is done automatically and can change just by changing some configurations
+    4- tree shaking:
+        1- removes dead-code which minifies our bundle by a lot
