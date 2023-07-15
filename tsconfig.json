@@ -3,8 +3,7 @@
         "noImplicitAny": true,
         "target": "ESNext",
         "esModuleInterop": true,
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true
+        "moduleResolution": "node"
     },
     "include": ["src/ts/**/*.ts"]
 }
