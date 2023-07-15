@@ -4,7 +4,6 @@
         "webpack:watch": "webpack --watch"
     },
     "sideEffects":[
-        "./src/ts/extra.ts",
         "**/*.css",
         "**/*.scss"
     ],

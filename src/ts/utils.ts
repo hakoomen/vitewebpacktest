@@ -1,17 +1,19 @@
-import * as Extra from "./extra";
-import {useLess} from "./extra";
+import * as Extra from "./extra"; // dropped as dead code
+import "./extra";
 
-export enum LogEvel {
+console.log("utils-side-effect-are");
+
+export enum LogLevel {
   ERROR,
   INFORMATION,
 }
 
-export function log(message: string, logLevel: LogEvel = LogEvel.INFORMATION) {
+export function log(message: string, logLevel: LogLevel = LogLevel.INFORMATION) {
   switch (logLevel) {
-    case LogEvel.ERROR:
+    case LogLevel.ERROR:
       console.error(message);
       break;
-    case LogEvel.INFORMATION:
+    case LogLevel.INFORMATION:
       console.info(message);
       break;
   }

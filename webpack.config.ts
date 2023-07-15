@@ -3,7 +3,7 @@ import { Configuration } from "webpack";
 
 const config: Configuration = {
   entry: "./src/ts/index.ts",
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       {
