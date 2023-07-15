@@ -21,6 +21,7 @@ const config: Configuration = {
           // Compiles Sass to CSS
           "sass-loader",
         ],
+        exclude: /node_modules/
       },
     ]
   },
