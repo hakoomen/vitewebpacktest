@@ -3,7 +3,7 @@ import { Configuration } from "webpack";
 
 const config: Configuration = {
   entry: "./src/ts/index.ts",
-  mode: "development",
+  mode: "production",
   module: {
     rules: [
       {
@@ -22,14 +22,14 @@ const config: Configuration = {
           "sass-loader",
         ],
       },
-    ],
+    ]
   },
   resolve: {
     // modify how imports work
     alias: {
       scss: ["/src/scss"],
     },
-    extensions: [".ts", ".js", ".scss"], // omit extension in imports(if multiple files exist by the same name a.js and a.ts it will go for a.ts because its precding .js in the list)
+    extensions: [".ts", ".js", ".scss"], // omit extension in imports(if multiple files exist by the same name a.js and a.ts it will go for a.ts because its preceding .js in the list)
   },
   output: {
     filename: "bundle.js",
@@ -37,7 +37,8 @@ const config: Configuration = {
   },
   optimization:{
     usedExports: true
-  }
+  },
+
 };
 
 export default config;

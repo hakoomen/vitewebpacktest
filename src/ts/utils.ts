@@ -1,5 +1,6 @@
-import * as Extra from "./extra"; // dropped as dead code
-import "./extra";
+export {useLess} from "./extra"; // will be dropped as dead code unless we mark it as a sideEffect
+//import "./extra";
+
 
 console.log("utils-side-effect-are");
 

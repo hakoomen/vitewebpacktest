@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "noImplicitAny": true,
-        "target": "es5",
+        "target": "ESNext",
         "esModuleInterop": true,
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true

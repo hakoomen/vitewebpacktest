@@ -13,3 +13,9 @@ what kind of problems does webpack solve:
         2- this process is done automatically and can change just by changing some configurations
     4- tree shaking:
         1- removes dead-code which minifies our bundle by a lot
+
+
+** For multi-entry point bundles (for instance bundle1 and bundle2) we can have the same imports as bundle1 which repeats the code in a whole new JS file and prevent browser cache to kick in for those shared libs.
+
+** although we have marked extra.ts as a sideEffect
+** tsconfig should be transpiled into es6 modules otherwise webpack cannot perform tree shakes (because it uses import/export statements to determine the dead-code)
