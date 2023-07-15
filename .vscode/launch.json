@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "command": "npm run wabpack:watch",
+            "command": "npm run webpack:watch",
             "name": "wabpack:watch",
             "request": "launch",
             "type": "node-terminal"
