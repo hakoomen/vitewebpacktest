@@ -1,5 +1,5 @@
-import * as Extra from "./extra";
-import {useLess} from "./extra";
+import * as Extra from "./extra"
+import {useLess} from "./extra"
 
 export enum LogEvel {
   ERROR,
