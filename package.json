@@ -1,12 +1,16 @@
 {
     "name": "webpack-bundler",
     "scripts": {
-        "webpack:watch": "webpack --watch"
-    },
-    "dependencies": {
+        "vite:watch": "tsc && vite build --watch",
+        "vite:build": "tsc && vite build",
+        "preview": "vite preview"
     },
     "devDependencies": {
-        "@types/node": "^20.4.2",
-        "typescript": "^5.1.6"
+        "typescript": "^5.0.2",
+        "vite": "^4.4.0"
+    },
+    "dependencies": {
+        "sass": "^1.63.6",
+        "vite-plugin-css-injected-by-js": "^3.2.0"
     }
 }

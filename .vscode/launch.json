@@ -10,5 +10,17 @@
             "request": "launch",
             "type": "node-terminal"
         },
+        {
+            "command": "npm run vite:build",
+            "name": "vite:build",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "npm run vite:watch",
+            "name": "vite:watch",
+            "request": "launch",
+            "type": "node-terminal"
+        },
     ]
 }
