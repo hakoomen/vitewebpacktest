@@ -5,9 +5,7 @@
     },
     "sideEffects":[
         "**/*.css",
-        "**/*.scss",
-        "inner-extra.ts",
-        "extra.ts"
+        "**/*.scss"
     ],
     "dependencies": {
         "css-loader": "^6.8.1",
