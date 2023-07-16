@@ -1,6 +1,7 @@
 //export * as Extra from "./extra"; // will be dropped as dead code unless we mark it as a sideEffect
 //export {useLess} from "./extra"; // will be dropped as dead code unless we mark it as a sideEffect
-//import "./extra";
+import "./extra"; //  sideEffect only import (this should work no matter what but in webpack sideEffects property in package.json overrides the language behavior which is horrible)
+//  this is still an open issue on their github: https://github.com/webpack/webpack/issues/6571
 // REMEMBER TO CHANGE PACKAGE.JSON SIDE-EFFECTS
 
 console.log("utils-side-effect-are");
