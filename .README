@@ -19,3 +19,7 @@ what kind of problems does webpack solve:
 
 ** although we have marked extra.ts as a sideEffect
 ** tsconfig should be transpiled into es6 modules otherwise webpack cannot perform tree shakes (because it uses import/export statements to determine the dead-code)
+
+// types of chunks/splits (https://david-gilbertson.medium.com/the-100-correct-way-to-split-your-chunks-with-webpack-f8a9df5b7758)
+Bundle splitting: creating more, smaller files (but loading them all on each network request anyway) for better caching.
+Code splitting: dynamically loading code, so that users only download the code they need for the part of the site that they’re viewing.

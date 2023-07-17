@@ -1,9 +1,14 @@
 {
     "compilerOptions": {
         "noImplicitAny": true,
-        "target": "ESNext",
+        "target": "esnext",
+        "module" :"esnext",
         "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
         "moduleResolution": "node"
+    },
+    "ts-node": {
+        "compilerOptions": { "module": "es" }
     },
     "include": ["src/ts/**/*.ts"]
 }
