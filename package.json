@@ -4,6 +4,7 @@
         "webpack:watch": "webpack --watch"
     },
     "dependencies": {
+        "esbuild": "0.18.13"
     },
     "devDependencies": {
         "@types/node": "^20.4.2",

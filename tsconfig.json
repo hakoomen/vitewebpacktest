@@ -1,9 +1,0 @@
-{
-    "compilerOptions": {
-        "noImplicitAny": true,
-        "target": "ESNext",
-        "esModuleInterop": true,
-        "moduleResolution": "node"
-    },
-    "include": ["src/ts/**/*.ts"]
-}
