@@ -1,3 +1,26 @@
-body {
-    background-color: plum;
+.white {
+    --primary-color: brown;
+    --secondary-color: red;
+}
+
+.black {
+    --primary-color: white;
+    --secondary-color: whitesmoke;
+}
+
+body.white {
+    background-color: white;
+}
+
+body.black {
+    background-color: black;
+}
+
+
+p {
+    color: var(--primary-color);
+}
+
+i {
+    color: var(--secondary-color);
 }
